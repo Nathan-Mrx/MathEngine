@@ -10,4 +10,4 @@ HTML_EXTRA_FILES = docs-assets/doxygen-awesome-darkmode-toggle.js
 PROJECT_NAME = "MathEngine"
 PROJECT_BRIEF = "A modern C++20 mathematics library for game development."
 
-USE_MDFILE_AS_MAINPAGE = ./docs-assets/MainPage.h
+USE_MDFILE_AS_MAINPAGE = ./docs-assets/MainPage.md
