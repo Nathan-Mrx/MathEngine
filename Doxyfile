@@ -3,3 +3,6 @@ FILE_PATTERNS = *.h
 GENERATE_LATEX = NO  # If you want PDF output
 GENERATE_HTML = YES   # If you want website output
 OUTPUT_DIRECTORY = ./Docs
+
+HTML_EXTRA_STYLESHEET = docs-assets/doxygen-awesome.css
+HTML_EXTRA_FILES = docs-assets/doxygen-awesome-darkmode-toggle.js
