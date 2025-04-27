@@ -1,0 +1,5 @@
+﻿INPUT = ./Math
+FILE_PATTERNS = *.h
+GENERATE_LATEX = NO  # If you want PDF output
+GENERATE_HTML = YES   # If you want website output
+OUTPUT_DIRECTORY = ./Docs

@@ -1,0 +1,27 @@
+﻿# CMake build folders
+build/
+cmake-build-*/
+
+# CLion settings
+.idea/
+*.iml
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Doxygen output
+/Docs/
+
+# Misc
+*.log
+*.obj
+*.exe
+*.out
+*.bin
+*.user
+*.cache
+*.CMakeLists.txt.user
