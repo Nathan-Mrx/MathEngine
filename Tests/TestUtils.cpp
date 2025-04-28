@@ -22,6 +22,19 @@ bool matrix2DEqual(const Math::Matrix2D& a, const Math::Matrix2D& b, float epsil
            floatEqual(a.m10, b.m10, epsilon) && floatEqual(a.m11, b.m11, epsilon);
 }
 
+// Remove the default parameter from the implementation
+bool matrix3DEqual(const Math::Matrix3D& a, const Math::Matrix3D& b, float epsilon) {
+    // Implementation remains the same, but without the default parameter
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if (std::abs(a.GetElement(i, j) - b.GetElement(i, j)) > epsilon) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 // Test runner to execute and report test results
 void runTest(const std::string& testName, std::function<bool()> testFunc) {
     std::cout << "Running test: " << std::left << std::setw(50) << testName << " - ";

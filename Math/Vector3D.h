@@ -235,6 +235,19 @@ namespace Math {
         [[nodiscard]] inline bool IsZero() const {
             return (x == 0 && y == 0 && z == 0);
         }
+
+        /**
+         * operator[] overload to access vector components.
+         *
+         * @param index The index of the component (0 for x, 1 for y, 2 for z).
+         * @return A reference to the component at the specified index.
+         */
+        inline float& operator[](size_t index) {
+            if (index == 0) return x;
+            if (index == 1) return y;
+            if (index == 2) return z;
+            throw std::out_of_range("Index out of range");
+        }
     };
 };
 #endif //VECTOR3_H
