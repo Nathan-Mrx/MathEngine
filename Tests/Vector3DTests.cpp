@@ -93,13 +93,13 @@ bool RunVector3DTests() {
 
     runTest("Vector3D Normalize", []() {
         Math::Vector3D v(3.0f, 0.0f, 4.0f);
-        Math::Vector3D normalized = v.Normalize();
+        Math::Vector3D normalized = v.GetNormalized();
         return vector3DEqual(normalized, Math::Vector3D(0.6f, 0.0f, 0.8f));
     });
 
     runTest("Vector3D Normalize Zero Vector", []() {
         Math::Vector3D v(0.0f, 0.0f, 0.0f);
-        Math::Vector3D normalized = v.Normalize();
+        Math::Vector3D normalized = v.GetNormalized();
         return vector3DEqual(normalized, Math::Vector3D(0.0f, 0.0f, 0.0f));
     });
 

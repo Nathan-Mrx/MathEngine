@@ -784,7 +784,7 @@ namespace Math {
             float oneMinusCos = 1.0f - cosAngle;
 
             // Ensure the axis is normalized
-            Vector3D normalizedAxis = axis.Normalize();
+            Vector3D normalizedAxis = axis.GetNormalized();
             float x = normalizedAxis.x;
             float y = normalizedAxis.y;
             float z = normalizedAxis.z;
@@ -857,10 +857,10 @@ namespace Math {
          */
         static Matrix3D LookAt(const Vector3D& direction, const Vector3D& up = Vector3D(0, 1, 0)) {
             // Ensure the direction is normalized
-            Vector3D forward = direction.Normalize();
+            Vector3D forward = direction.GetNormalized();
 
             // Compute right vector via cross product
-            Vector3D right = up.Cross(forward).Normalize();
+            Vector3D right = up.Cross(forward).GetNormalized();
 
             // Recompute up vector to ensure orthogonality
             Vector3D newUp = forward.Cross(right);
@@ -881,7 +881,7 @@ namespace Math {
          */
         static Matrix3D Reflection(const Vector3D& normal) {
             // Ensure the normal is normalized
-            Vector3D normalizedNormal = normal.Normalize();
+            Vector3D normalizedNormal = normal.GetNormalized();
             float x = normalizedNormal.x;
             float y = normalizedNormal.y;
             float z = normalizedNormal.z;
@@ -1005,7 +1005,7 @@ namespace Math {
          */
         static Matrix3D ProjectionOntoPlane(const Vector3D& normal) {
             // Ensure the normal is normalized
-            Vector3D normalizedNormal = normal.Normalize();
+            Vector3D normalizedNormal = normal.GetNormalized();
             float x = normalizedNormal.x;
             float y = normalizedNormal.y;
             float z = normalizedNormal.z;
@@ -1056,7 +1056,7 @@ namespace Math {
             // which works well for symmetric matrices
 
             Vector3D eigenvalues;
-            Vector3D v = Vector3D(1, 1, 1).Normalize(); // Starting vector
+            Vector3D v = Vector3D(1, 1, 1).GetNormalized(); // Starting vector
 
             for (int i = 0; i < 3; i++) {
                 // Power iteration for largest eigenvalue
@@ -1099,9 +1099,9 @@ namespace Math {
                     // For the next eigenvalue, start with a vector orthogonal to v
                     if (i == 0) {
                         if (std::fabs(v.x) > std::fabs(v.y)) {
-                            v = Vector3D(-v.z, 0, v.x).Normalize();
+                            v = Vector3D(-v.z, 0, v.x).GetNormalized();
                         } else {
-                            v = Vector3D(0, -v.z, v.y).Normalize();
+                            v = Vector3D(0, -v.z, v.y).GetNormalized();
                         }
                     }
                 }
@@ -1252,7 +1252,7 @@ namespace Math {
             Vector3D v3 = GetColumn(2);
 
             // Gram-Schmidt process
-            Vector3D u1 = v1.Normalize();
+            Vector3D u1 = v1.GetNormalized();
 
             Vector3D u2 = v2 - u1 * v2.Dot(u1);
             float len2 = u2.Length();
@@ -1273,7 +1273,7 @@ namespace Math {
                         u2 = Vector3D(0, 0, 1) - u1 * u1.z;
                     }
                 }
-                u2 = u2.Normalize();
+                u2 = u2.GetNormalized();
             }
 
             // u3 is orthogonal to both u1 and u2

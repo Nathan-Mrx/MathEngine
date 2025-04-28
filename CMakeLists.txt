@@ -15,6 +15,7 @@ set(TEST_SOURCES
     Tests/Vector3DTests.cpp
     Tests/Matrix2DTests.cpp
     Tests/Matrix3DTests.cpp
+    Tests/Matrix4DTests.cpp
     Tests/Transform2DTests.cpp
 )
 

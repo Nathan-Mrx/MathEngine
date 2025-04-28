@@ -124,12 +124,28 @@ namespace Math {
          *
          * @return The normalized vector.
          */
-        [[nodiscard]] inline Vector3D Normalize() const {
+        [[nodiscard]] inline Vector3D GetNormalized() const {
             float length = Length();
             if (length == 0) {
                 return {0, 0, 0}; // Avoid division by zero
             }
             return {x / length, y / length, z / length};
+        }
+
+        /**
+         * Normalizes the vector in place.
+         *
+         * The normalized vector has a length of 1 and points in the same direction as the original vector.
+         * If the length is zero, it remains unchanged.
+         */
+        inline void Normalize() {
+            float length = Length();
+            if (length == 0) {
+                return; // Avoid division by zero
+            }
+            x /= length;
+            y /= length;
+            z /= length;
         }
 
         /**

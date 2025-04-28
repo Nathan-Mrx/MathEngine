@@ -35,6 +35,10 @@ bool matrix3DEqual(const Math::Matrix3D& a, const Math::Matrix3D& b, float epsil
     return true;
 }
 
+bool matrix4DEqual(const Math::Matrix4D& a, const Math::Matrix4D& b, float epsilon) {
+    return a.Equals(b, epsilon);
+}
+
 // Test runner to execute and report test results
 void runTest(const std::string& testName, std::function<bool()> testFunc) {
     std::cout << "Running test: " << std::left << std::setw(50) << testName << " - ";

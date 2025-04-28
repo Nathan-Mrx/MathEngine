@@ -4,6 +4,7 @@
 #include "Tests/Vector3DTests.h"
 #include "Tests/Matrix2DTests.h"
 #include "Tests/Matrix3DTests.h"
+#include "Tests/Matrix4DTests.h"
 #include "Tests/Transform2DTests.h"
 
 int main() {
@@ -13,6 +14,7 @@ int main() {
     RunVector3DTests();
     RunMatrix2DTests();
     RunMatrix3DTests();
+    RunMatrix4DTests();
     RunTransform2DTests();
 
     std::cout << "\nAll tests completed.\n";
