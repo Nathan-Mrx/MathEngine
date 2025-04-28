@@ -7,9 +7,5 @@ var searchData=
   ['radians_5f360_4',['RADIANS_360',['../namespaceMath_1_1Constants.html#a595043907defd00e07d46b05a9e2fd17',1,'Math::Constants']]],
   ['radians_5f45_5',['RADIANS_45',['../namespaceMath_1_1Constants.html#a60224452afe6c88522d773d07aaf8919',1,'Math::Constants']]],
   ['radians_5f60_6',['RADIANS_60',['../namespaceMath_1_1Constants.html#a7fdfffdb959a62e80b5dacf856e26a92',1,'Math::Constants']]],
-  ['radians_5f90_7',['RADIANS_90',['../namespaceMath_1_1Constants.html#af271e573d69996789f6a27c8e32f7a9b',1,'Math::Constants']]],
-  ['rotatedeg_8',['RotateDeg',['../structMath_1_1Matrix2D.html#ac5b4eab910f8f55525b2e1c36ee1d78d',1,'Math::Matrix2D']]],
-  ['rotaterad_9',['RotateRad',['../structMath_1_1Matrix2D.html#a4e3800d0a3f6e7672d8fa6cd8028b829',1,'Math::Matrix2D']]],
-  ['rotationdeg_10',['RotationDeg',['../structMath_1_1Matrix2D.html#a24e3669363459f53f696872f1a77c556',1,'Math::Matrix2D']]],
-  ['rotationrad_11',['RotationRad',['../structMath_1_1Matrix2D.html#a3b552ba9a77f10b62d653549f7fa05f5',1,'Math::Matrix2D']]]
+  ['radians_5f90_7',['RADIANS_90',['../namespaceMath_1_1Constants.html#af271e573d69996789f6a27c8e32f7a9b',1,'Math::Constants']]]
 ];
