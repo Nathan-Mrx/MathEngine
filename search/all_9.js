@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vector2d_0',['Vector2D',['../structMath_1_1Vector2D.html',1,'Math']]],
-  ['vector3d_1',['Vector3D',['../structMath_1_1Vector3D.html',1,'Math']]]
+  ['print_0',['Print',['../structMath_1_1Matrix2D.html#a33e88db63220b57a072ddf545ecc173e',1,'Math::Matrix2D']]]
 ];
