@@ -233,16 +233,26 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keywordflow">return</span> (x == 0 &amp;&amp; y == 0 &amp;&amp; z == 0);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
 </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    };</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a889f726ec287645a374b0a52df9045db">  245</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span>&amp; <a class="code hl_function" href="structMath_1_1Vector3D.html#a889f726ec287645a374b0a52df9045db">operator[]</a>(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keywordflow">if</span> (index == 0) <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">if</span> (index == 1) <span class="keywordflow">return</span> y;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">if</span> (index == 2) <span class="keywordflow">return</span> z;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;Index out of range&quot;</span>);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        }</div>
 </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>};</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#endif </span><span class="comment">//VECTOR3_H</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    };</div>
+</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>};</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#endif </span><span class="comment">//VECTOR3_H</span></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html"><div class="ttname"><a href="structMath_1_1Vector3D.html">Math::Vector3D</a></div><div class="ttdef"><b>Definition</b> Vector3D.h:10</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a1e3a66f1e45c869f1a7ca10830c17d9a"><div class="ttname"><a href="structMath_1_1Vector3D.html#a1e3a66f1e45c869f1a7ca10830c17d9a">Math::Vector3D::Zero</a></div><div class="ttdeci">static Vector3D Zero()</div><div class="ttdoc">Returns a zero vector (0, 0, 0).</div><div class="ttdef"><b>Definition</b> Vector3D.h:217</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a2845fc28ced16fb5840e8d39a9ba1dfe"><div class="ttname"><a href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Math::Vector3D::Length</a></div><div class="ttdeci">float Length() const</div><div class="ttdef"><b>Definition</b> Vector3D.h:115</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a5856b4e39af74b75608eb7930820e5ae"><div class="ttname"><a href="structMath_1_1Vector3D.html#a5856b4e39af74b75608eb7930820e5ae">Math::Vector3D::operator/=</a></div><div class="ttdeci">void operator/=(float Scalar)</div><div class="ttdef"><b>Definition</b> Vector3D.h:87</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a5e46f146e192a0b3fd56a507a97050b6"><div class="ttname"><a href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">Math::Vector3D::Distance</a></div><div class="ttdeci">float Distance(const Vector3D &amp;OtherVector) const</div><div class="ttdef"><b>Definition</b> Vector3D.h:161</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a7bfe04d43cd7d9b228147e96fdae2937"><div class="ttname"><a href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">Math::Vector3D::AngleRad</a></div><div class="ttdeci">float AngleRad(const Vector3D &amp;OtherVector) const</div><div class="ttdef"><b>Definition</b> Vector3D.h:144</div></div>
+<div class="ttc" id="astructMath_1_1Vector3D_html_a889f726ec287645a374b0a52df9045db"><div class="ttname"><a href="structMath_1_1Vector3D.html#a889f726ec287645a374b0a52df9045db">Math::Vector3D::operator[]</a></div><div class="ttdeci">float &amp; operator[](size_t index)</div><div class="ttdef"><b>Definition</b> Vector3D.h:245</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a9230b4b7ede54367b3bb7bf485489133"><div class="ttname"><a href="structMath_1_1Vector3D.html#a9230b4b7ede54367b3bb7bf485489133">Math::Vector3D::Unit</a></div><div class="ttdeci">static Vector3D Unit()</div><div class="ttdoc">Returns a unit vector (1, 1, 1).</div><div class="ttdef"><b>Definition</b> Vector3D.h:226</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_a9af181a2ff92a6ba5f2a3f4ec0a00498"><div class="ttname"><a href="structMath_1_1Vector3D.html#a9af181a2ff92a6ba5f2a3f4ec0a00498">Math::Vector3D::operator*</a></div><div class="ttdeci">constexpr Vector3D operator*(float Scalar) const</div><div class="ttdef"><b>Definition</b> Vector3D.h:60</div></div>
 <div class="ttc" id="astructMath_1_1Vector3D_html_aa9d7549a93428bcd797717b6b6ff34bd"><div class="ttname"><a href="structMath_1_1Vector3D.html#aa9d7549a93428bcd797717b6b6ff34bd">Math::Vector3D::operator-</a></div><div class="ttdeci">constexpr Vector3D operator-(const Vector3D &amp;OtherVector) const</div><div class="ttdef"><b>Definition</b> Vector3D.h:41</div></div>

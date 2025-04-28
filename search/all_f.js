@@ -1,7 +1,18 @@
 var searchData=
 [
-  ['scale_0',['scale',['../structMath_1_1Matrix2D.html#aa752c23b7935184276e6b7144e1c1b1b',1,'Math::Matrix2D::Scale(float ScaleX, float ScaleY)'],['../structMath_1_1Matrix2D.html#a015594dc1f20c973ebc609f2c7284c75',1,'Math::Matrix2D::Scale(float ScaleFactor)']]],
-  ['shear_1',['shear',['../structMath_1_1Matrix2D.html#a53e090311fb837f20b54dcb0447d5c56',1,'Math::Matrix2D::Shear(float ShearX, float ShearY)'],['../structMath_1_1Matrix2D.html#a3991f17be1ddac197d93f1dfbf35acec',1,'Math::Matrix2D::Shear(float ShearFactor)']]],
-  ['sqrt_5f2_2',['SQRT_2',['../namespaceMath_1_1Constants.html#a205469947e1c6302f5e3c11458d2fe46',1,'Math::Constants']]],
-  ['sqrt_5f3_3',['SQRT_3',['../namespaceMath_1_1Constants.html#ad4e8290489b0b09c7d3de70a0bd0e0a1',1,'Math::Constants']]]
+  ['scale_0',['scale',['../structMath_1_1Matrix2D.html#a015594dc1f20c973ebc609f2c7284c75',1,'Math::Matrix2D::Scale()'],['../classMath_1_1Transform2D.html#a75c4c710ea5205f1c40b45f46b2674c6',1,'Math::Transform2D::Scale(const Vector2D &amp;scale)'],['../classMath_1_1Transform2D.html#af94c5f01c4fd3789253b33e85efa6429',1,'Math::Transform2D::Scale(float uniformScale)'],['../structMath_1_1Matrix2D.html#aa752c23b7935184276e6b7144e1c1b1b',1,'Math::Matrix2D::Scale()']]],
+  ['scaling_1',['scaling',['../structMath_1_1Matrix3D.html#a4a28995385f0117e54712ac0dae04731',1,'Math::Matrix3D::Scaling(float scaleX, float scaleY, float scaleZ)'],['../structMath_1_1Matrix3D.html#a3ec963813042bf9f631421d48e01b684',1,'Math::Matrix3D::Scaling(const Vector3D &amp;scale)'],['../structMath_1_1Matrix3D.html#a436f6a4cc113d442cfcdf7c44df3e437',1,'Math::Matrix3D::Scaling(float scale)'],['../classMath_1_1Transform2D.html#ac90fab91c48ce3f4abdb6b54f4af1c03',1,'Math::Transform2D::Scaling(const Vector2D &amp;scale)'],['../classMath_1_1Transform2D.html#a4221220e44b52ec875b49f2e34f46efb',1,'Math::Transform2D::Scaling(float uniformScale)']]],
+  ['setcolumn_2',['SetColumn',['../structMath_1_1Matrix3D.html#ad73d6c86d5ec2fce5e913449e924f406',1,'Math::Matrix3D']]],
+  ['setelement_3',['SetElement',['../structMath_1_1Matrix3D.html#a5eee872aeb7bae4f5b87af093968cb3d',1,'Math::Matrix3D']]],
+  ['setparent_4',['SetParent',['../classMath_1_1Transform2D.html#a6f2a7d36c9ad5867a7071270ca221315',1,'Math::Transform2D']]],
+  ['setposition_5',['SetPosition',['../classMath_1_1Transform2D.html#a23612cb052db8e93af3a4ea5acd4792a',1,'Math::Transform2D']]],
+  ['setrotationdeg_6',['SetRotationDeg',['../classMath_1_1Transform2D.html#abb4f079330c0e3dbac23ff505b1c9184',1,'Math::Transform2D']]],
+  ['setrotationrad_7',['SetRotationRad',['../classMath_1_1Transform2D.html#aa26a2e3c7f5626dc45e79197c4b2a192',1,'Math::Transform2D']]],
+  ['setrow_8',['SetRow',['../structMath_1_1Matrix3D.html#ac2d0f44ff1a5c19d3b1276ad72ad9fc2',1,'Math::Matrix3D']]],
+  ['setscale_9',['setscale',['../classMath_1_1Transform2D.html#a510a345774ebcd22e2f85a5af0cbfc6a',1,'Math::Transform2D::SetScale(const Vector2D &amp;scale)'],['../classMath_1_1Transform2D.html#a5562817826283fe5d35833fb2ac2b381',1,'Math::Transform2D::SetScale(float uniformScale)']]],
+  ['shear_10',['shear',['../structMath_1_1Matrix2D.html#a53e090311fb837f20b54dcb0447d5c56',1,'Math::Matrix2D::Shear(float ShearX, float ShearY)'],['../structMath_1_1Matrix2D.html#a3991f17be1ddac197d93f1dfbf35acec',1,'Math::Matrix2D::Shear(float ShearFactor)']]],
+  ['shearing_11',['Shearing',['../structMath_1_1Matrix3D.html#a7b9892efdda24f7cc72a5d2447cb6389',1,'Math::Matrix3D']]],
+  ['skewsymmetric_12',['SkewSymmetric',['../structMath_1_1Matrix3D.html#a8c781b18a62ae88f160a476293f55a74',1,'Math::Matrix3D']]],
+  ['sqrt_5f2_13',['SQRT_2',['../namespaceMath_1_1Constants.html#a205469947e1c6302f5e3c11458d2fe46',1,'Math::Constants']]],
+  ['sqrt_5f3_14',['SQRT_3',['../namespaceMath_1_1Constants.html#ad4e8290489b0b09c7d3de70a0bd0e0a1',1,'Math::Constants']]]
 ];
