@@ -102,7 +102,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ae1d19465c3683867b489564713c89ba6">   22</a></span>        <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#ae1d19465c3683867b489564713c89ba6">operator+</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(x + OtherVector.x, y + OtherVector.y, z + OtherVector.z);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">return</span> {x + OtherVector.x, y + OtherVector.y, z + OtherVector.z};</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -116,7 +116,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#aa9d7549a93428bcd797717b6b6ff34bd">   41</a></span>        <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#aa9d7549a93428bcd797717b6b6ff34bd">operator-</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(x - OtherVector.x, y - OtherVector.y, z - OtherVector.z);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">return</span> {x - OtherVector.x, y - OtherVector.y, z - OtherVector.z};</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
 </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -130,7 +130,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a9af181a2ff92a6ba5f2a3f4ec0a00498">   60</a></span>        <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#a9af181a2ff92a6ba5f2a3f4ec0a00498">operator*</a>(<span class="keywordtype">float</span> Scalar)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(x * Scalar, y * Scalar, z * Scalar);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">return</span> {x * Scalar, y * Scalar, z * Scalar};</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
 </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -144,7 +144,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#acdc5d2a08cc5bf63d75685679010b1be">   79</a></span>        <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#acdc5d2a08cc5bf63d75685679010b1be">operator/</a>(<span class="keywordtype">float</span> Scalar)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(x / Scalar, y / Scalar, z / Scalar);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> {x / Scalar, y / Scalar, z / Scalar};</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
 </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
@@ -157,29 +157,29 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">  103</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">Dot</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">  103</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">Dot</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> x * OtherVector.x + y * OtherVector.y + z * OtherVector.z;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
 </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">  115</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">  115</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> std::sqrt(x * x + y * y + z * z);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
 </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ac086a87cc443561581cce20ead4bc638">  127</a></span>        <span class="keyword">inline</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#ac086a87cc443561581cce20ead4bc638">Normalize</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ac086a87cc443561581cce20ead4bc638">  127</a></span>        [[nodiscard]] <span class="keyword">inline</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#ac086a87cc443561581cce20ead4bc638">Normalize</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordtype">float</span> length = <a class="code hl_function" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a>();</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">if</span> (length == 0) {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(0, 0, 0); <span class="comment">// Avoid division by zero</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">return</span> {0, 0, 0}; <span class="comment">// Avoid division by zero</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(x / length, y / length, z / length);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">return</span> {x / length, y / length, z / length};</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
 </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">  144</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">AngleRad</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">  144</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">AngleRad</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keywordtype">float</span> dotProduct = <a class="code hl_function" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">Dot</a>(OtherVector);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordtype">float</span> lengths = <a class="code hl_function" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a>() * OtherVector.<a class="code hl_function" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a>();</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">if</span> (lengths == 0) {</div>
@@ -189,7 +189,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
 </div>
 <div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">  161</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">Distance</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">  161</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">Distance</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">return</span> std::sqrt((OtherVector.x - x) * (OtherVector.x - x) +</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                             (OtherVector.y - y) * (OtherVector.y - y) +</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                             (OtherVector.z - z) * (OtherVector.z - z));</div>
@@ -197,39 +197,39 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ac8440b724e035f2f68da17a2870b1b74">  177</a></span>        <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#ac8440b724e035f2f68da17a2870b1b74">Cross</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(y * OtherVector.z - z * OtherVector.y,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ac8440b724e035f2f68da17a2870b1b74">  177</a></span>        [[nodiscard]] <span class="keyword">constexpr</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#ac8440b724e035f2f68da17a2870b1b74">Cross</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">return</span> {y * OtherVector.z - z * OtherVector.y,</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                            z * OtherVector.x - x * OtherVector.z,</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                            x * OtherVector.y - y * OtherVector.x);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                            x * OtherVector.y - y * OtherVector.x};</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        }</div>
 </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#acf5fe3b0dc595dd55653d2f0bf71dfc4">  195</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#acf5fe3b0dc595dd55653d2f0bf71dfc4">TripleProduct</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector1, <span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector2)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#acf5fe3b0dc595dd55653d2f0bf71dfc4">  195</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#acf5fe3b0dc595dd55653d2f0bf71dfc4">TripleProduct</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector1, <span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector2)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#aed870c31220dcd20f31f8e90130d088c">Dot</a>(OtherVector1.<a class="code hl_function" href="structMath_1_1Vector3D.html#ac8440b724e035f2f68da17a2870b1b74">Cross</a>(OtherVector2));</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
 </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
 <div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ace1c0948c3598b8dafc64dd2beaf0315">  208</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#ace1c0948c3598b8dafc64dd2beaf0315">AngleDeg</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#ace1c0948c3598b8dafc64dd2beaf0315">  208</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#ace1c0948c3598b8dafc64dd2beaf0315">AngleDeg</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>&amp; OtherVector)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">AngleRad</a>(OtherVector) * (180.0f / M_PI);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
 </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
 <div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a1e3a66f1e45c869f1a7ca10830c17d9a">  217</a></span>        <span class="keyword">static</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#a1e3a66f1e45c869f1a7ca10830c17d9a">Zero</a>() {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(0, 0, 0);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">return</span> {0, 0, 0};</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
 </div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
 <div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#a9230b4b7ede54367b3bb7bf485489133">  226</a></span>        <span class="keyword">static</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a> <a class="code hl_function" href="structMath_1_1Vector3D.html#a9230b4b7ede54367b3bb7bf485489133">Unit</a>() {</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structMath_1_1Vector3D.html">Vector3D</a>(1, 1, 1);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">return</span> {1, 1, 1};</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        }</div>
 </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#acefe9dc9c87d4887f8edad034e4469a7">  235</a></span>        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#acefe9dc9c87d4887f8edad034e4469a7">IsZero</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="structMath_1_1Vector3D.html#acefe9dc9c87d4887f8edad034e4469a7">  235</a></span>        [[nodiscard]] <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structMath_1_1Vector3D.html#acefe9dc9c87d4887f8edad034e4469a7">IsZero</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keywordflow">return</span> (x == 0 &amp;&amp; y == 0 &amp;&amp; z == 0);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
 </div>
