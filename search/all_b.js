@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['scale_0',['scale',['../structMath_1_1Matrix2D.html#afeef9757817c6b01a23eb64483b2ad9d',1,'Math::Matrix2D::Scale(float ScaleX, float ScaleY) const'],['../structMath_1_1Matrix2D.html#a2db544402300b3112e37fe3c3574aacb',1,'Math::Matrix2D::Scale(float Scale) const'],['../structMath_1_1Matrix2D.html#aa752c23b7935184276e6b7144e1c1b1b',1,'Math::Matrix2D::Scale(float ScaleX, float ScaleY)'],['../structMath_1_1Matrix2D.html#a5d9a469201e72fc9109fb72d4fab62ad',1,'Math::Matrix2D::Scale(float Scale)']]],
-  ['shear_1',['shear',['../structMath_1_1Matrix2D.html#afa423cb6d46a67c6019fe446d8a6f0dd',1,'Math::Matrix2D::Shear(float ShearX, float ShearY) const'],['../structMath_1_1Matrix2D.html#a6d1057ff92d82c3ce028dc8b94e9b5b1',1,'Math::Matrix2D::Shear(float Shear) const'],['../structMath_1_1Matrix2D.html#a53e090311fb837f20b54dcb0447d5c56',1,'Math::Matrix2D::Shear(float ShearX, float ShearY)'],['../structMath_1_1Matrix2D.html#a8d4959e8c5cf542b5a35a14507b3ca78',1,'Math::Matrix2D::Shear(float Shear)']]]
+  ['scale_0',['scale',['../structMath_1_1Matrix2D.html#aa752c23b7935184276e6b7144e1c1b1b',1,'Math::Matrix2D::Scale(float ScaleX, float ScaleY)'],['../structMath_1_1Matrix2D.html#a015594dc1f20c973ebc609f2c7284c75',1,'Math::Matrix2D::Scale(float ScaleFactor)']]],
+  ['shear_1',['shear',['../structMath_1_1Matrix2D.html#a53e090311fb837f20b54dcb0447d5c56',1,'Math::Matrix2D::Shear(float ShearX, float ShearY)'],['../structMath_1_1Matrix2D.html#a3991f17be1ddac197d93f1dfbf35acec',1,'Math::Matrix2D::Shear(float ShearFactor)']]]
 ];
