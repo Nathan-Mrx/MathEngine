@@ -415,7 +415,7 @@ namespace Math {
          * @param ScaleY The scaling factor in the y direction.
          * @return The scaled matrix.
          */
-        inline Matrix2D Scale(float ScaleX, float ScaleY) const {
+        inline Matrix2D GetScaled(float ScaleX, float ScaleY) const {
             return Matrix2D(
                     m00 * ScaleX, m01 * ScaleY,
                     m10 * ScaleX, m11 * ScaleY
@@ -425,11 +425,11 @@ namespace Math {
         /**
          * Returns a scaled matrix.
          *
-         * @param Scale The scaling factor.
+         * @param ScaleFactor The scaling factor.
          * @return The scaled matrix.
          */
-        inline Matrix2D Scale(float Scale) const {
-            return Scale(Scale, Scale);
+        inline Matrix2D GetScaled(float ScaleFactor) const {
+            return GetScaled(ScaleFactor, ScaleFactor);
         }
 
         /**
@@ -448,10 +448,10 @@ namespace Math {
         /**
          * Applies a scaling transformation to the matrix.
          *
-         * @param Scale The scaling factor.
+         * @param ScaleFactor The scaling factor.
          */
-        inline void Scale(float Scale) {
-            Scale(Scale, Scale);
+        inline void Scale(float ScaleFactor) {
+            Scale(ScaleFactor, ScaleFactor);
         }
 
         /**
@@ -461,7 +461,7 @@ namespace Math {
          * @param ShearY The shearing factor in the y direction.
          * @return The sheared matrix.
          */
-        inline Matrix2D Shear(float ShearX, float ShearY) const {
+        inline Matrix2D GetSheared(float ShearX, float ShearY) const {
             return Matrix2D(
                     m00 + ShearX * m10, m01 + ShearY * m11,
                     m10 + ShearX * m00, m11 + ShearY * m01
@@ -471,11 +471,11 @@ namespace Math {
         /**
          * Returns a sheared matrix.
          *
-         * @param Shear The shearing factor.
+         * @param ShearFactor The shearing factor.
          * @return The sheared matrix.
          */
-        inline Matrix2D Shear(float Shear) const {
-            return Shear(Shear, Shear);
+        inline Matrix2D GetSheared(float ShearFactor) const {
+            return GetSheared(ShearFactor, ShearFactor);
         }
 
         /**
@@ -485,19 +485,25 @@ namespace Math {
          * @param ShearY The shearing factor in the y direction.
          */
         inline void Shear(float ShearX, float ShearY) {
-            m00 += ShearX * m10;
-            m01 += ShearY * m11;
-            m10 += ShearX * m00;
-            m11 += ShearY * m01;
+            float old_m00 = m00;
+            float old_m01 = m01;
+            float old_m10 = m10;
+            float old_m11 = m11;
+
+            m00 = old_m00 + ShearX * old_m10;
+            m01 = old_m01 + ShearX * old_m11;
+            m10 = old_m10 + ShearY * old_m00;
+            m11 = old_m11 + ShearY * old_m01;
         }
+
 
         /**
          * Applies a shearing transformation to the matrix.
          *
-         * @param Shear The shearing factor.
+         * @param ShearFactor The shearing factor.
          */
-        inline void Shear(float Shear) {
-            Shear(Shear, Shear);
+        inline void Shear(float ShearFactor) {
+            Shear(ShearFactor, ShearFactor);
         }
 
         /**
