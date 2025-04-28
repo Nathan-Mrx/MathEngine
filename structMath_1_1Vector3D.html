@@ -109,8 +109,10 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Vector3D</b> (fl
 <tr class="separator:aed870c31220dcd20f31f8e90130d088c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2845fc28ced16fb5840e8d39a9ba1dfe" id="r_a2845fc28ced16fb5840e8d39a9ba1dfe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#a2845fc28ced16fb5840e8d39a9ba1dfe">Length</a> () const</td></tr>
 <tr class="separator:a2845fc28ced16fb5840e8d39a9ba1dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac086a87cc443561581cce20ead4bc638" id="r_ac086a87cc443561581cce20ead4bc638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMath_1_1Vector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#ac086a87cc443561581cce20ead4bc638">Normalize</a> () const</td></tr>
-<tr class="separator:ac086a87cc443561581cce20ead4bc638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5df5f8eb3514df25143917f0f2d4085" id="r_ad5df5f8eb3514df25143917f0f2d4085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMath_1_1Vector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#ad5df5f8eb3514df25143917f0f2d4085">GetNormalized</a> () const</td></tr>
+<tr class="separator:ad5df5f8eb3514df25143917f0f2d4085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fa63a104fe1e96200c27fcd35276cc" id="r_a75fa63a104fe1e96200c27fcd35276cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#a75fa63a104fe1e96200c27fcd35276cc">Normalize</a> ()</td></tr>
+<tr class="separator:a75fa63a104fe1e96200c27fcd35276cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfe04d43cd7d9b228147e96fdae2937" id="r_a7bfe04d43cd7d9b228147e96fdae2937"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#a7bfe04d43cd7d9b228147e96fdae2937">AngleRad</a> (const <a class="el" href="structMath_1_1Vector3D.html">Vector3D</a> &amp;OtherVector) const</td></tr>
 <tr class="separator:a7bfe04d43cd7d9b228147e96fdae2937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e46f146e192a0b3fd56a507a97050b6" id="r_a5e46f146e192a0b3fd56a507a97050b6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMath_1_1Vector3D.html#a5e46f146e192a0b3fd56a507a97050b6">Distance</a> (const <a class="el" href="structMath_1_1Vector3D.html">Vector3D</a> &amp;OtherVector) const</td></tr>
@@ -324,6 +326,34 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
 
 </div>
 </div>
+<a id="ad5df5f8eb3514df25143917f0f2d4085" name="ad5df5f8eb3514df25143917f0f2d4085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5df5f8eb3514df25143917f0f2d4085">&#9670;&#160;</a></span>GetNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMath_1_1Vector3D.html">Vector3D</a> Math::Vector3D::GetNormalized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Normalizes the vector.</p>
+<p>The normalized vector has a length of 1 and points in the same direction as the original vector. If the length is zero, it returns a zero vector.</p>
+<dl class="section return"><dt>Returns</dt><dd>The normalized vector. </dd></dl>
+
+</div>
+</div>
 <a id="acefe9dc9c87d4887f8edad034e4469a7" name="acefe9dc9c87d4887f8edad034e4469a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acefe9dc9c87d4887f8edad034e4469a7">&#9670;&#160;</a></span>IsZero()</h2>
 
@@ -380,8 +410,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
 
 </div>
 </div>
-<a id="ac086a87cc443561581cce20ead4bc638" name="ac086a87cc443561581cce20ead4bc638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac086a87cc443561581cce20ead4bc638">&#9670;&#160;</a></span>Normalize()</h2>
+<a id="a75fa63a104fe1e96200c27fcd35276cc" name="a75fa63a104fe1e96200c27fcd35276cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fa63a104fe1e96200c27fcd35276cc">&#9670;&#160;</a></span>Normalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,10 +420,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structMath_1_1Vector3D.html">Vector3D</a> Math::Vector3D::Normalize </td>
+          <td class="memname">void Math::Vector3D::Normalize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -402,9 +432,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Normalizes the vector.</p>
-<p>The normalized vector has a length of 1 and points in the same direction as the original vector. If the length is zero, it returns a zero vector.</p>
-<dl class="section return"><dt>Returns</dt><dd>The normalized vector. </dd></dl>
+<p>Normalizes the vector in place.</p>
+<p>The normalized vector has a length of 1 and points in the same direction as the original vector. If the length is zero, it remains unchanged. </p>
 
 </div>
 </div>
