@@ -20,7 +20,7 @@ namespace Math {
          * @return The sum of the two vectors.
          */
         constexpr Vector2D operator+(const Vector2D& OtherVector) const {
-            return Vector2D(x + OtherVector.x, y + OtherVector.y);
+            return {x + OtherVector.x, y + OtherVector.y};
         }
 
         /**
@@ -38,7 +38,7 @@ namespace Math {
          * @return The difference of the two vectors.
          */
         constexpr Vector2D operator-(const Vector2D& OtherVector) const {
-            return Vector2D(x - OtherVector.x, y - OtherVector.y);
+            return {x - OtherVector.x, y - OtherVector.y};
         }
 
         /**
@@ -56,7 +56,7 @@ namespace Math {
          * @return The product of the vector and the scalar.
          */
         constexpr Vector2D operator*(float Scalar) const {
-            return Vector2D(x * Scalar, y * Scalar);
+            return {x * Scalar, y * Scalar};
         }
 
         /**
@@ -74,7 +74,7 @@ namespace Math {
          * @return The quotient of the vector and the scalar.
          */
         constexpr Vector2D operator/(float Scalar) const {
-            return Vector2D(x / Scalar, y / Scalar);
+            return {x / Scalar, y / Scalar};
         }
 
         /**
@@ -96,7 +96,7 @@ namespace Math {
          * @param OtherVector The vector to dot with.
          * @return The dot product of the two vectors.
          */
-        constexpr float Dot(const Vector2D& OtherVector) const {
+        [[nodiscard]] constexpr float Dot(const Vector2D& OtherVector) const {
             return x * OtherVector.x + y * OtherVector.y;
         }
 
@@ -108,7 +108,7 @@ namespace Math {
          *
          * @return The length of the vector.
          */
-        inline float Length() const {
+        [[nodiscard]] inline float Length() const {
             return std::sqrt(x * x + y * y);
         }
 
@@ -121,12 +121,12 @@ namespace Math {
          *
          * @return The normalized vector.
          */
-        inline Vector2D Normalize() const {
+        [[nodiscard]] inline Vector2D Normalize() const {
             float length = Length();
             if (length == 0) {
-                return Vector2D(0, 0); // Avoid division by zero
+                return {0, 0}; // Avoid division by zero
             }
-            return Vector2D(x / length, y / length);
+            return {x / length, y / length};
         }
 
         /**
@@ -138,7 +138,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the distance to.
          * @return The distance between the two vectors.
          */
-        inline float Distance(const Vector2D& OtherVector) const {
+        [[nodiscard]] inline float Distance(const Vector2D& OtherVector) const {
             return std::sqrt((OtherVector.x - x) * (OtherVector.x - x) +
                              (OtherVector.y - y) * (OtherVector.y - y));
         };
@@ -153,7 +153,7 @@ namespace Math {
          * @param OtherVector The vector to cross with.
          * @return The cross product of the two vectors.
          */
-        constexpr float Cross(const Vector2D& OtherVector) const {
+        [[nodiscard]] constexpr float Cross(const Vector2D& OtherVector) const {
             return x * OtherVector.y - y * OtherVector.x;
         }
 
@@ -166,7 +166,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the angle with.
          * @return The angle between the two vectors in radians.
          */
-        inline float AngleRad(const Vector2D& OtherVector) const {
+        [[nodiscard]] inline float AngleRad(const Vector2D& OtherVector) const {
             float dotProduct = Dot(OtherVector);
             float lengths = Length() * OtherVector.Length();
             if (lengths == 0) {
@@ -184,7 +184,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the angle with.
          * @return The angle between the two vectors in degrees.
          */
-        inline float AngleDeg(const Vector2D& OtherVector) const {
+        [[nodiscard]] inline float AngleDeg(const Vector2D& OtherVector) const {
             float angleInRadians = AngleRad(OtherVector);
             return angleInRadians * (180.0f / M_PI);
         }

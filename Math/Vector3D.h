@@ -20,7 +20,7 @@ namespace Math {
          * @return The sum of the two vectors.
          */
         constexpr Vector3D operator+(const Vector3D& OtherVector) const {
-            return Vector3D(x + OtherVector.x, y + OtherVector.y, z + OtherVector.z);
+            return {x + OtherVector.x, y + OtherVector.y, z + OtherVector.z};
         }
 
         /**
@@ -39,7 +39,7 @@ namespace Math {
          * @return The difference of the two vectors.
          */
         constexpr Vector3D operator-(const Vector3D& OtherVector) const {
-            return Vector3D(x - OtherVector.x, y - OtherVector.y, z - OtherVector.z);
+            return {x - OtherVector.x, y - OtherVector.y, z - OtherVector.z};
         }
 
         /**
@@ -58,7 +58,7 @@ namespace Math {
          * @return The product of the vector and the scalar.
          */
         constexpr Vector3D operator*(float Scalar) const {
-            return Vector3D(x * Scalar, y * Scalar, z * Scalar);
+            return {x * Scalar, y * Scalar, z * Scalar};
         }
 
         /**
@@ -77,7 +77,7 @@ namespace Math {
          * @return The quotient of the vector and the scalar.
          */
         constexpr Vector3D operator/(float Scalar) const {
-            return Vector3D(x / Scalar, y / Scalar, z / Scalar);
+            return {x / Scalar, y / Scalar, z / Scalar};
         }
 
         /**
@@ -100,7 +100,7 @@ namespace Math {
          * @param OtherVector The vector to dot with.
          * @return The dot product of the two vectors.
          */
-        constexpr float Dot(const Vector3D& OtherVector) const {
+        [[nodiscard]] constexpr float Dot(const Vector3D& OtherVector) const {
             return x * OtherVector.x + y * OtherVector.y + z * OtherVector.z;
         }
 
@@ -112,7 +112,7 @@ namespace Math {
          *
          * @return The length of the vector.
          */
-        inline float Length() const {
+        [[nodiscard]] inline float Length() const {
             return std::sqrt(x * x + y * y + z * z);
         }
 
@@ -124,12 +124,12 @@ namespace Math {
          *
          * @return The normalized vector.
          */
-        inline Vector3D Normalize() const {
+        [[nodiscard]] inline Vector3D Normalize() const {
             float length = Length();
             if (length == 0) {
-                return Vector3D(0, 0, 0); // Avoid division by zero
+                return {0, 0, 0}; // Avoid division by zero
             }
-            return Vector3D(x / length, y / length, z / length);
+            return {x / length, y / length, z / length};
         }
 
         /**
@@ -141,7 +141,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the angle with.
          * @return The angle between the two vectors in radians.
          */
-        inline float AngleRad(const Vector3D& OtherVector) const {
+        [[nodiscard]] inline float AngleRad(const Vector3D& OtherVector) const {
             float dotProduct = Dot(OtherVector);
             float lengths = Length() * OtherVector.Length();
             if (lengths == 0) {
@@ -158,7 +158,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the distance to.
          * @return The distance between the two vectors.
          */
-        inline float Distance(const Vector3D& OtherVector) const {
+        [[nodiscard]] inline float Distance(const Vector3D& OtherVector) const {
             return std::sqrt((OtherVector.x - x) * (OtherVector.x - x) +
                              (OtherVector.y - y) * (OtherVector.y - y) +
                              (OtherVector.z - z) * (OtherVector.z - z));
@@ -174,10 +174,10 @@ namespace Math {
          * @param OtherVector The vector to cross with.
          * @return The cross product of the two vectors.
          */
-        constexpr Vector3D Cross(const Vector3D& OtherVector) const {
-            return Vector3D(y * OtherVector.z - z * OtherVector.y,
+        [[nodiscard]] constexpr Vector3D Cross(const Vector3D& OtherVector) const {
+            return {y * OtherVector.z - z * OtherVector.y,
                             z * OtherVector.x - x * OtherVector.z,
-                            x * OtherVector.y - y * OtherVector.x);
+                            x * OtherVector.y - y * OtherVector.x};
         }
 
         /**
@@ -192,7 +192,7 @@ namespace Math {
          * @param OtherVector2 The second vector.
          * @return The triple product of the three vectors.
          */
-        inline float TripleProduct(const Vector3D& OtherVector1, const Vector3D& OtherVector2) const {
+        [[nodiscard]] inline float TripleProduct(const Vector3D& OtherVector1, const Vector3D& OtherVector2) const {
             return Dot(OtherVector1.Cross(OtherVector2));
         }
 
@@ -205,7 +205,7 @@ namespace Math {
          * @param OtherVector The vector to calculate the angle with.
          * @return The angle between the two vectors in degrees.
          */
-        inline float AngleDeg(const Vector3D& OtherVector) const {
+        [[nodiscard]] inline float AngleDeg(const Vector3D& OtherVector) const {
             return AngleRad(OtherVector) * (180.0f / M_PI);
         }
 
@@ -215,7 +215,7 @@ namespace Math {
          * @return A zero vector.
          */
         static Vector3D Zero() {
-            return Vector3D(0, 0, 0);
+            return {0, 0, 0};
         }
 
         /**
@@ -224,7 +224,7 @@ namespace Math {
          * @return A unit vector.
          */
         static Vector3D Unit() {
-            return Vector3D(1, 1, 1);
+            return {1, 1, 1};
         }
 
         /**
@@ -232,7 +232,7 @@ namespace Math {
          *
          *  @return True if the vector is a zero vector, false otherwise.
          */
-        inline bool IsZero() const {
+        [[nodiscard]] inline bool IsZero() const {
             return (x == 0 && y == 0 && z == 0);
         }
     };
