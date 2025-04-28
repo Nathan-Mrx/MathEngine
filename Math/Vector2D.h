@@ -27,7 +27,7 @@ namespace Math {
          * Adds another vector to this vector.
          * @param OtherVector The vector to add.
          */
-        inline void operator+=(const Vector2D& OtherVector) {
+        constexpr void operator+=(const Vector2D& OtherVector) {
             x += OtherVector.x;
             y += OtherVector.y;
         }
@@ -187,6 +187,17 @@ namespace Math {
         [[nodiscard]] inline float AngleDeg(const Vector2D& OtherVector) const {
             float angleInRadians = AngleRad(OtherVector);
             return angleInRadians * (180.0f / M_PI);
+        }
+
+        /**
+         * @brief Equality operator.
+         *
+         * @param OtherVector The vector to compare with.
+         * @return True if the vectors are equal within an epsilon, false otherwise.
+         */
+        [[nodiscard]] inline bool operator==(const Vector2D& OtherVector) const {
+            constexpr float epsilon = 1e-6f;
+            return std::fabs(x - OtherVector.x) < epsilon && std::fabs(y - OtherVector.y) < epsilon;
         }
     };
 };
